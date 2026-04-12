@@ -23,16 +23,18 @@ body{
     margin: 0;
 }
 
-.catalogo{
-    font-size: 70px;
+.assistir{
+    font-size: 80px;
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
+    translate: calc(-40%);
 }
 
 .menu a{
     text-decoration: none;
     color: #b4b4b4;
     font-size: 18px;
+    transition: 0.3s;
 }
 
 .menu a:hover{
