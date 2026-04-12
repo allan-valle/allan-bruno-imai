@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+h2{
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+}
+
+.formulario{
+    text-align: center;
+}
