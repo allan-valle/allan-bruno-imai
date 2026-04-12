@@ -47,6 +47,12 @@ body{
     background: linear-gradient(180deg, #2a2a2a, #1f1f1f);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.movie{
+    display: flex;
     gap: 30px;
     align-items: center;
 }
@@ -57,7 +63,6 @@ body{
     object-fit: cover;
     border-radius: 12px;
     flex-shrink: 0;
-
 }
 
 .info{
@@ -92,3 +97,35 @@ body{
     color: white;
 }
 
+.trailer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trailer h3{
+    font-size: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+    translate:calc(40%);
+}
+
+.video{
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
