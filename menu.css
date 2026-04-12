@@ -100,11 +100,10 @@ img:hover {
 }
 
 .catalogo{
-    font-size: 70px;
-    color: white;
+    font-size: 80px;
     font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 3px;
     margin: 0;
+    translate: calc(-32%);
 }
 
 .menu{
