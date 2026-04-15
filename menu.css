@@ -121,3 +121,9 @@ img:hover {
 .menu a:hover{
     color: white;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
