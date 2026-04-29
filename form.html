@@ -9,7 +9,7 @@
 <body>
     <h2 class="titulo">Cadastrar</h2>
     <div class="formulario">
-        <form id="meuformulario">
+        <form id="form">
             <label for=titulo>Nome do filme</label>
             <input type="text" id="titulo" placeholder="Título" required><br>
             <label for="img">Imagem do filme</label>
@@ -17,10 +17,12 @@
             <label for="paragrafo">Escreva sobre o filme</label>
             <textarea type="text" id="sinopse" placeholder="Sinopse" required></textarea><br>
             <input type="text" id="data" placeholder="Data de lançamento" required><br>
-            <input type="text" id="Diretor" placeholder="Diretor" required><br>
+            <input type="text" id="diretor" placeholder="Diretor" required><br>
             <input type="text" id="imdb" placeholder="IMDb" required><br>
             <input type="text" id="classificacao" placeholder="Classificação" required><br>
+            <button type="submit">Adicionar</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
