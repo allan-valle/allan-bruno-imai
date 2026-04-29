@@ -15,11 +15,18 @@ formulario.addEventListener('submit', function(evento) {
 
     const novoFilme=`
         <div class="card">
-            <img src="${filme.capa}">
+            <img src="${filme.imagem}">
             <h3>${filme.titulo}</h3>
+            <p>${filmes.sinopse}</p>
+            <p>${filmes.data}</p>
+            <p>${filmes.diretor}</p>
+            <p>${filmes.imdb}</p>
+            <p>${filmes.classificacao}</p>
         </div>
     `;
 
-console.log(novoFilme)
+    const colecao = document.getElementById('colecao');
+    console.log(novoFilme)
+    formulario.innerHTML(novoFilme)
 
 });
