@@ -13,20 +13,19 @@ formulario.addEventListener('submit', function(evento) {
         classificacao: document.getElementById('classificacao').value
     };
 
-    const novoFilme=`
+    const novoFilme = `
         <div class="card">
-            <img src="${filme.imagem}">
-            <h3>${filme.titulo}</h3>
-            <p>${filmes.sinopse}</p>
-            <p>${filmes.data}</p>
-            <p>${filmes.diretor}</p>
-            <p>${filmes.imdb}</p>
-            <p>${filmes.classificacao}</p>
+            <img src="${novo.imagem}" alt="${novo.titulo}">
+            <h3>${novo.titulo}</h3>
+            <p>${novo.sinopse}</p>
+            <p><strong>Data:</strong> ${novo.data}</p>
+            <p><strong>Diretor:</strong> ${novo.diretor}</p>
+            <p><strong>IMDb:</strong> ${novo.imdb}</p>
+            <p><strong>Classificação:</strong> ${novo.classificacao}</p>
         </div>
     `;
 
     const colecao = document.getElementById('colecao');
-    console.log(novoFilme)
-    formulario.innerHTML(novoFilme)
-
+    colecao.innerHTML += novoFilme;
+    formulario.reset();
 });
