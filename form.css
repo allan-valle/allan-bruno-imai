@@ -1,6 +1,7 @@
 body{
     background-color: rgb(24, 24, 24);
-    color: white
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 h2{
@@ -17,4 +18,26 @@ label{
 
 .formulario{
     text-align: center;
+}
+
+#colecao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: rgb(40, 40, 40);
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
 }
