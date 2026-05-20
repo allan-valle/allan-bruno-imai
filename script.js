@@ -1,3 +1,15 @@
+const conteudoDaGaveta = localStorage.getItem("meusFilmes")
+//criei uma const para guardar o que já existe no localStorage na gaveta "meusFilmes"
+
+var galeria;
+
+if(conteudoDaGaveta){
+    galeria = JSON.parse(conteudoDaGaveta);//monta
+}
+else{
+    galeria = [];
+}
+
 const formulario = document.getElementById('form');
 
 formulario.addEventListener('submit', function(evento) {
@@ -27,5 +39,7 @@ formulario.addEventListener('submit', function(evento) {
 
     const colecao = document.getElementById('colecao');
     colecao.innerHTML += novoFilme;
+    galeria.push(novo);
+    localStorage.stItem("meusFilmes", JSON.stringify(galeria))
     formulario.reset();
 });
