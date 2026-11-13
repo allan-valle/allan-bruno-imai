@@ -46,6 +46,30 @@ app.post('/api/lista', (req, res) => {
     lista.push(novoFilme);
     salvar();
     res.status(201).json({ status: "sucesso" });
+
+    const titulo = req,body,titulo;
+    const imagem = req,body,imagem;
+    const sinopse = req,body,sinopse;
+    const data = req,body,data;
+    const diretor = req,body,diretor;
+    const imdb = req,body,diretor;
+    const classificacao = req,body,diretor;
+
+    const sql = 'INSERT INTO filmes (titulo, imagem, sinopse, data, diretor, imdb, classificacao) VALUES (?, ?, ?, ?, ?, ?, ?)'
+    const valores = [titulo, imagem, sinopse, data, diretor, imdb, classificacao]
+
+    db.query(sql, valores, function(erro, resultado){
+        if(erro){
+            console.erro('erro ao inserir no MySQL', erro);
+            return res.status(500).json({erro: 'erro ao salvar no banco'});
+        }
+        console.log('obra cadastrada, ID: ', resultado.insertId);
+    });
+
+    res.json({
+        status: 'sucesso',
+        ud: resultado.insertId;
+    })
 });
 
 app.listen(3000, () => {
